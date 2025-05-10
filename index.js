@@ -16,7 +16,7 @@ app.use('/api', pbRouter)
 
 const connection = async () => {
     try {
-        app.listen(process.env.PORT, () => console.log(`server started on PORT: ${process.env.PORT}`))
+        app.listen(process.env.PORT, '0.0.0.0', () => console.log(`server started on PORT: ${process.env.PORT}`))
     } catch (error) {
         console.log(error.message)
     }
