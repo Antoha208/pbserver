@@ -4,7 +4,7 @@ const pbRouter = Router()
 const pbController = require('../controllers/pbController')
 // const { authMiddleware } = require('../middleware/authMiddleware.js')
 
-pbRouter.post('/newPb', pbController.handlePostback)
+pbRouter.get('/newPb', pbController.handlePostback)
 
 
 module.exports = pbRouter
